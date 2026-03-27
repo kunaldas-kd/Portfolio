@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axiom — About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="home.html" class="nav__logo">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <polygon points="14,2 26,22 2,22" stroke="currentColor" stroke-width="2" fill="none"/>
+        <circle cx="14" cy="14" r="3" fill="currentColor"/>
+      </svg>
+      <span>Axiom</span>
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="home.html" class="nav__link" data-page="home">Home</a></li>
+      <li><a href="about.html" class="nav__link" data-page="about">About</a></li>
+      <li><a href="contact.html" class="nav__link" data-page="contact">Contact</a></li>
+    </ul>
+    <div class="nav__right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+        <span class="theme-toggle__icon theme-toggle__icon--light">☀</span>
+        <span class="theme-toggle__icon theme-toggle__icon--dark">☽</span>
+        <span class="theme-toggle__icon theme-toggle__icon--auto">⬡</span>
+      </button>
+      <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul role="list">
+      <li><a href="home.html" data-page="home">Home</a></li>
+      <li><a href="about.html" data-page="about">About</a></li>
+      <li><a href="contact.html" data-page="contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="page-hero__inner">
+        <span class="section-label reveal">Our story</span>
+        <h1 class="section-title reveal reveal-delay-1">We believe great<br>software changes lives.</h1>
+        <p class="section-body reveal reveal-delay-2">
+          Founded in 2021, Axiom was built by designers and engineers who were
+          tired of choosing between beauty and performance. So we built a platform that refuses to compromise.
+        </p>
+      </div>
+    </div>
+
+    <!-- MISSION -->
+    <section class="mission container">
+      <blockquote class="mission__quote reveal">
+        "Design is not just what it looks like. Design is
+        <em>how it works</em> — and we're obsessed with both."
+      </blockquote>
+      <div class="mission__body reveal reveal-delay-1">
+        <p>
+          We started Axiom because we saw too many teams shipping products that felt
+          like compromises. Beautiful designs hampered by slow code. Fast code that
+          looked like it was built in 2009.
+        </p>
+        <p>
+          Our mission is simple: give every product team the tools to build things
+          people genuinely love to use — without sacrificing speed, accessibility,
+          or maintainability.
+        </p>
+        <div class="divider" style="margin-top:8px;"></div>
+        <a href="contact.html" class="btn btn--primary" style="margin-top:8px; align-self:flex-start;">
+          Join our journey
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="values">
+      <div class="values__inner">
+        <div class="values__header">
+          <span class="section-label reveal">What drives us</span>
+          <h2 class="section-title reveal reveal-delay-1">Our core values</h2>
+        </div>
+        <div class="values__grid">
+          <div class="value-card reveal">
+            <div class="value-card__num">01</div>
+            <div class="value-card__title">Craft first</div>
+            <p class="value-card__body">Every pixel, every millisecond matters. We never ship something we aren't proud of.</p>
+          </div>
+          <div class="value-card reveal reveal-delay-1">
+            <div class="value-card__num">02</div>
+            <div class="value-card__title">Radically honest</div>
+            <p class="value-card__body">We give our users and each other the truth — clearly, kindly, and without spin.</p>
+          </div>
+          <div class="value-card reveal reveal-delay-2">
+            <div class="value-card__num">03</div>
+            <div class="value-card__title">User-obsessed</div>
+            <p class="value-card__body">Our customers' success is our success. We listen before we build, always.</p>
+          </div>
+          <div class="value-card reveal reveal-delay-3">
+            <div class="value-card__num">04</div>
+            <div class="value-card__title">Open by default</div>
+            <p class="value-card__body">We share our work, our learnings, and our roadmap. Transparency builds trust.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team">
+      <div class="team__header">
+        <span class="section-label reveal">The people</span>
+        <h2 class="section-title reveal reveal-delay-1">Built by humans, for humans.</h2>
+        <p class="section-body reveal reveal-delay-2">A small, focused team of designers, engineers, and product thinkers distributed across 12 time zones.</p>
+      </div>
+      <div class="team__grid">
+        <div class="team-card reveal">
+          <div class="team-card__avatar">
+            <div class="team-card__avatar-bg"></div>
+            🧑‍💻
+          </div>
+          <div>
+            <div class="team-card__name">Alex Rivera</div>
+            <div class="team-card__role">Co-founder & CEO</div>
+          </div>
+          <div class="team-card__links">
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div class="team-card reveal reveal-delay-1">
+          <div class="team-card__avatar">
+            <div class="team-card__avatar-bg"></div>
+            👩‍🎨
+          </div>
+          <div>
+            <div class="team-card__name">Mia Chen</div>
+            <div class="team-card__role">Co-founder & CDO</div>
+          </div>
+          <div class="team-card__links">
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="Dribbble">◉</a>
+          </div>
+        </div>
+        <div class="team-card reveal reveal-delay-2">
+          <div class="team-card__avatar">
+            <div class="team-card__avatar-bg"></div>
+            🧑‍🔬
+          </div>
+          <div>
+            <div class="team-card__name">Sam Okafor</div>
+            <div class="team-card__role">Head of Engineering</div>
+          </div>
+          <div class="team-card__links">
+            <a href="#" aria-label="GitHub">⌥</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div class="team-card reveal reveal-delay-3">
+          <div class="team-card__avatar">
+            <div class="team-card__avatar-bg"></div>
+            👩‍💼
+          </div>
+          <div>
+            <div class="team-card__name">Priya Nair</div>
+            <div class="team-card__role">Head of Product</div>
+          </div>
+          <div class="team-card__links">
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="timeline">
+      <div class="timeline__inner">
+        <div class="timeline__header">
+          <span class="section-label reveal">Our journey</span>
+          <h2 class="section-title reveal reveal-delay-1">How we got here.</h2>
+        </div>
+        <div class="timeline__list">
+          <div class="timeline__item reveal" data-timeline>
+            <div class="timeline__dot">🌱</div>
+            <div class="timeline__content">
+              <div class="timeline__year">2021</div>
+              <div class="timeline__title">Founded in a garage</div>
+              <p class="timeline__body">Alex and Mia quit their jobs at big tech and started hacking on the first prototype with $15k in savings.</p>
+            </div>
+          </div>
+          <div class="timeline__item reveal reveal-delay-1" data-timeline>
+            <div class="timeline__dot">🚀</div>
+            <div class="timeline__content">
+              <div class="timeline__year">2022</div>
+              <div class="timeline__title">Seed round & first 100 users</div>
+              <p class="timeline__body">Raised $2M seed, shipped v1, and signed our first 100 design teams — all within 90 days.</p>
+            </div>
+          </div>
+          <div class="timeline__item reveal reveal-delay-2" data-timeline>
+            <div class="timeline__dot">⚡</div>
+            <div class="timeline__content">
+              <div class="timeline__year">2023</div>
+              <div class="timeline__title">Series A & 10k customers</div>
+              <p class="timeline__body">Closed $18M Series A. Launched integrations marketplace. Hit 10,000 active teams milestone.</p>
+            </div>
+          </div>
+          <div class="timeline__item reveal reveal-delay-3" data-timeline>
+            <div class="timeline__dot">🌍</div>
+            <div class="timeline__content">
+              <div class="timeline__year">2025 →</div>
+              <div class="timeline__title">Global expansion</div>
+              <p class="timeline__body">Now serving 1,200+ teams in 48 countries. Building the future of product development — one pixel at a time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__brand">Axiom</span>
+      <span class="footer__copy">&copy; 2026 — All rights reserved</span>
+      <div class="footer__links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="shared.js"></script>
+  <script src="about.js"></script>
+</body>
+</html>

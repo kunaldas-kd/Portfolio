@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axiom — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="home.html" class="nav__logo">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <polygon points="14,2 26,22 2,22" stroke="currentColor" stroke-width="2" fill="none"/>
+        <circle cx="14" cy="14" r="3" fill="currentColor"/>
+      </svg>
+      <span>Axiom</span>
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="home.html" class="nav__link" data-page="home">Home</a></li>
+      <li><a href="about.html" class="nav__link" data-page="about">About</a></li>
+      <li><a href="contact.html" class="nav__link" data-page="contact">Contact</a></li>
+    </ul>
+    <div class="nav__right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+        <span class="theme-toggle__icon theme-toggle__icon--light">☀</span>
+        <span class="theme-toggle__icon theme-toggle__icon--dark">☽</span>
+        <span class="theme-toggle__icon theme-toggle__icon--auto">⬡</span>
+      </button>
+      <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul role="list">
+      <li><a href="home.html" data-page="home">Home</a></li>
+      <li><a href="about.html" data-page="about">About</a></li>
+      <li><a href="contact.html" data-page="contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero noise">
+      <div class="hero__bg">
+        <div class="hero__grid"></div>
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+      </div>
+
+      <div class="hero__inner">
+        <div class="hero__content">
+          <div class="hero__eyebrow">
+            <span class="hero__eyebrow-dot"></span>
+            <span class="chip">Now in public beta</span>
+          </div>
+
+          <h1 class="hero__title">
+            Build products<br>
+            people <em>love</em><br>
+            to use.
+          </h1>
+
+          <p class="hero__sub">
+            Axiom is a design-first platform that helps teams ship beautiful,
+            performant digital products — from concept to launch, faster than ever.
+          </p>
+
+          <div class="hero__actions">
+            <a href="contact.html" class="btn btn--primary">
+              Get started free
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="about.html" class="btn btn--outline">Learn more</a>
+          </div>
+
+          <div class="hero__stats">
+            <div>
+              <div class="hero__stat-num" data-count="1200">0</div>
+              <div class="hero__stat-label">Active teams</div>
+            </div>
+            <div>
+              <div class="hero__stat-num" data-count="99">0</div>
+              <div class="hero__stat-label">Uptime %</div>
+            </div>
+            <div>
+              <div class="hero__stat-num" data-count="48">0</div>
+              <div class="hero__stat-label">Countries</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating cards visual -->
+        <div class="hero__visual">
+          <div class="hero__card-stack">
+            <div class="hero__card hero__card--back">
+              <div class="card-label" style="color:#fff; font-size:0.85rem; opacity:0.7; margin-bottom:6px;">Performance</div>
+              <div class="card-label" style="color:#fff; font-size:1.3rem;">98 / 100</div>
+              <div class="card-bar card-bar-2">
+                <div class="card-bar__fill"></div>
+              </div>
+              <div style="margin-top:12px; font-size:0.78rem; color:rgba(255,255,255,0.6);">Lighthouse score</div>
+            </div>
+
+            <div class="hero__card hero__card--front">
+              <div class="card-icon">🚀</div>
+              <div class="card-label">Launch Dashboard</div>
+              <div style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;">
+                Track every metric that matters in one place.
+              </div>
+              <div class="card-bar card-bar-1">
+                <div class="card-bar__fill"></div>
+              </div>
+              <div style="font-size:0.78rem; color:var(--text-light); margin-top:6px;">Progress · 75%</div>
+              <div class="card-tags" style="margin-top:14px;">
+                <span class="card-tag">Design</span>
+                <span class="card-tag">Analytics</span>
+                <span class="card-tag">API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-section">
+      <p class="marquee-label">Trusted by teams worldwide</p>
+      <div class="marquee-track" id="marqueeTrack">
+        <span class="marquee-item">Vercel <span class="marquee-dot">◆</span></span>
+        <span class="marquee-item">Linear <span class="marquee-dot">◆</span></span>
+        <span class="marquee-item">Stripe <span class="marquee-dot">◆</span></span>
+        <span class="marquee-item">Figma <span class="marquee-dot">◆</span></span>
+        <span class="marquee-item">Notion <span class="marquee-dot">◆</span></span>
+        <span class="marquee-item">Supabase <span class="marquee-dot">◆</span></span>
+        <span class="marquee-item">Loom <span class="marquee-dot">◆</span></span>
+        <span class="marquee-item">Framer <span class="marquee-dot">◆</span></span>
+        <!-- duplicate for seamless loop -->
+        <span class="marquee-item">Vercel <span class="marquee-dot">◆</span></span>
+        <span class="marquee-item">Linear <span class="marquee-dot">◆</span></span>
+        <span class="marquee-item">Stripe <span class="marquee-dot">◆</span></span>
+        <span class="marquee-item">Figma <span class="marquee-dot">◆</span></span>
+        <span class="marquee-item">Notion <span class="marquee-dot">◆</span></span>
+        <span class="marquee-item">Supabase <span class="marquee-dot">◆</span></span>
+        <span class="marquee-item">Loom <span class="marquee-dot">◆</span></span>
+        <span class="marquee-item">Framer <span class="marquee-dot">◆</span></span>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <section class="features">
+      <div class="features__header">
+        <span class="section-label reveal">Why Axiom</span>
+        <h2 class="section-title reveal reveal-delay-1">Everything you need<br>to ship faster.</h2>
+        <p class="section-body reveal reveal-delay-2">
+          A complete toolkit for modern product teams — design, code, and collaborate in
+          one unified workspace.
+        </p>
+      </div>
+
+      <div class="features__grid">
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">⚡</div>
+          <div class="feature-card__title">Lightning Fast</div>
+          <p class="feature-card__body">
+            Built with performance as a first principle. Sub-50ms load times
+            and 99.9% uptime SLA guaranteed across all plans.
+          </p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-card__icon">🎨</div>
+          <div class="feature-card__title">Design System</div>
+          <p class="feature-card__body">
+            Ship consistent UI with our token-based design system.
+            Components that adapt beautifully across all screen sizes.
+          </p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-card__icon">🔒</div>
+          <div class="feature-card__title">Secure by Default</div>
+          <p class="feature-card__body">
+            End-to-end encryption, SOC 2 Type II certified, and
+            granular access controls keep your data safe.
+          </p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-card__icon">🔗</div>
+          <div class="feature-card__title">100+ Integrations</div>
+          <p class="feature-card__body">
+            Connect your existing stack in minutes. Native plugins for
+            GitHub, Figma, Slack, Linear, and more.
+          </p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-card__icon">📊</div>
+          <div class="feature-card__title">Real-time Analytics</div>
+          <p class="feature-card__body">
+            Track every user interaction with beautiful, actionable
+            dashboards built directly into your workflow.
+          </p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-card__icon">🤝</div>
+          <div class="feature-card__title">Team Collaboration</div>
+          <p class="feature-card__body">
+            Multiplayer editing, threaded comments, and role-based
+            permissions keep your whole team aligned.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="container" style="padding-bottom: 0; margin-bottom: 0;">
+      <div class="cta-banner reveal noise">
+        <div>
+          <h2 class="cta-banner__title">Ready to build something remarkable?</h2>
+          <p class="cta-banner__sub">Start free, no credit card required. Up and running in 60 seconds.</p>
+        </div>
+        <div class="cta-banner__actions">
+          <a href="contact.html" class="btn btn--white">Start for free</a>
+          <a href="about.html"   class="btn btn--outline-white">See how it works</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__brand">Axiom</span>
+      <span class="footer__copy">&copy; 2026 — All rights reserved</span>
+      <div class="footer__links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="shared.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>
